@@ -48,7 +48,7 @@ function agregarAmigo(){
     
     amigoIngresado = capturaAmigo();
     
-    if (amigos.length = 0) {
+    if (amigos.length == 0) {
         amigos.push(amigoIngresado);
         }
         else {
