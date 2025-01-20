@@ -42,14 +42,27 @@ function agregarAmigo(){
         lo añade al arreglo que almacena los nombre de amigos.
     Limpia el campo de entrada: restablece el campo de texto a una cadena vacía.
 */
-let amigoIngresado = "";
-console.log("amigo ingresado: " +  amigoIngresado);
-amigoIngresado = document.getElementById("amigo").value;
-console.log("amigo ingresado: " +  amigoIngresado);
+    let amigoIngresado = "";
+    
+    console.log("amigo ingresado: " +  amigoIngresado);
+    amigoIngresado = capturaAmigo();
+
+    
+    console.log("amigo ingresado: " +  amigoIngresado);
 
 // document.getElementById o document.querySelector 
 
 }
+
+function capturaAmigo(){
+    let captura = document.getElementById("amigo").value;
+    if (captura <> "" ){
+        return(captura)};
+    else {
+        alert("Por favor, inserte un nombre");
+        capturaAmigo();
+    }
+    }
 
 
 function acrualizaListaDeAmigos(){
