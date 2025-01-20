@@ -26,6 +26,7 @@ Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará a
 
 let amigos = [];
 let cantidadDeAmigos = 0;
+console.log(cantidadDeAmigos);
 
 function creaAmigo(){
     /*
