@@ -56,7 +56,7 @@ function agregarAmigo(){
 
 function capturaAmigo(){
     let captura = document.getElementById("amigo").value;
-    if (captura <> "" ){
+    if (captura != "" ){
         return(captura)};
     else {
         alert("Por favor, inserte un nombre");
