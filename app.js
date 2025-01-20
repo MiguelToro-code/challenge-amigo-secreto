@@ -45,8 +45,22 @@ function agregarAmigo(){
     let amigoIngresado = "";
     
     console.log("amigo ingresado: " +  amigoIngresado);
+    
     amigoIngresado = capturaAmigo();
+    
+    if (amigos.length = 0) {
+        amigos.push(amigoIngresado);
+        }
+        else {
+            if amigos.includes(amigoIngresado){
+                alert("Ya habías ingresado a: " + amigoIngresado);
 
+            }
+            else {
+                cantidadDeAmigos +=1;
+                amigos.push(amigoIngresado);
+            }
+        }
     
     console.log("amigo ingresado: " +  amigoIngresado);
 
@@ -62,9 +76,7 @@ function capturaAmigo(){
         }
     else {
         alert("Por favor, inserte un nombre");
-        
-    };
-    
+         };
     }
 
 
