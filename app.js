@@ -1,4 +1,4 @@
-// MATR
+// Miguel Toro
 // 20-ENE-2025
 /*
 Esta aplicación permite a los usuarios ingresar nombres de amigos en una lista 
