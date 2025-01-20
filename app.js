@@ -44,7 +44,7 @@ function agregarAmigo(){
 */
 let amigo = '';
 console.log("amigo: " +  amigo);
-amigo= document.getElementById('valorUsuario').value;
+amigo= document.getElementById("valorUsuario").value;
 console.log("amigo: " +  amigo);
 // document.getElementById o document.querySelector 
 
