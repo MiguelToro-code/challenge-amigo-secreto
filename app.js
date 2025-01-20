@@ -46,8 +46,8 @@ function agregarAmigo(){
     
     console.log("amigo ingresado: " +  amigoIngresado);
     
-    amigoIngresado = capturaAmigo();
-    
+    if ((amigoIngresado = capturaAmigo()) != ""){
+
     if (amigos.includes(amigoIngresado)){
                 alert("Ya habías ingresado a: " + amigoIngresado);
             }
@@ -58,6 +58,7 @@ function agregarAmigo(){
     
     console.log("amigo ingresado: " +  amigoIngresado);
     console.log(amigos);
+    };
 }
 // document.getElementById o document.querySelector 
 
