@@ -62,9 +62,9 @@ function capturaAmigo(){
         }
     else {
         alert("Por favor, inserte un nombre");
-        agregarAmigo();
+        
     };
-    return(captura);
+    
     }
 
 
