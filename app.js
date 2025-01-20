@@ -47,11 +47,11 @@ function agregarAmigo(){
     console.log("amigo ingresado: " +  amigoIngresado);
     
     if ((amigoIngresado = capturaAmigo()) != ""){
-
-    if (amigos.includes(amigoIngresado)){
-                alert("Ya habías ingresado a: " + amigoIngresado);
+        console.log(amigoIngresado);
+        if (amigos.includes(amigoIngresado)){
+            alert("Ya habías ingresado a: " + amigoIngresado);
             }
-    else {
+        else {
         cantidadDeAmigos += 1;
         amigos.push(amigoIngresado);
         }
