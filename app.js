@@ -26,6 +26,7 @@ Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará a
 
 let amigos = [];
 let cantidadDeAmigos = 0;
+
 console.log(cantidadDeAmigos);
 
 function creaAmigo(){
@@ -42,8 +43,10 @@ function creaAmigo(){
     Limpia el campo de entrada: restablece el campo de texto a una cadena vacía.
 */
 
+// document.getElementById o document.querySelector 
+
 }
-document.getElementById o document.querySelector 
+
 
 function acrualizaListaDeAmigos(){
     /*
