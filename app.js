@@ -43,9 +43,9 @@ function agregarAmigo(){
     Limpia el campo de entrada: restablece el campo de texto a una cadena vacía.
 */
 let amigoIngresado = "";
-console.log("amigo: " +  amigo);
+console.log("amigo ingresado: " +  amigoIngresado);
 amigoIngresado = document.getElementById("amigo").value;
-console.log("amigo: " +  amigo);
+console.log("amigo ingresado: " +  amigoIngresado);
 
 // document.getElementById o document.querySelector 
 
