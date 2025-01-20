@@ -42,10 +42,11 @@ function agregarAmigo(){
         lo añade al arreglo que almacena los nombre de amigos.
     Limpia el campo de entrada: restablece el campo de texto a una cadena vacía.
 */
-let amigo = '';
+let amigoIngresado = "";
 console.log("amigo: " +  amigo);
-amigo= document.getElementById("valorUsuario").value;
+amigoIngresado = document.getElementById("amigo").value;
 console.log("amigo: " +  amigo);
+
 // document.getElementById o document.querySelector 
 
 }
