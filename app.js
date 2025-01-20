@@ -45,8 +45,8 @@ function agregarAmigo(){
     let amigoIngresado = "";
     
     console.log("amigo ingresado: " +  amigoIngresado);
-    
-    if ((amigoIngresado = capturaAmigo()) != ""){
+    amigoIngresado = capturaAmigo();
+    if (amigoIngresado != ""){
         console.log(amigoIngresado);
         if (amigos.includes(amigoIngresado)){
             alert("Ya habías ingresado a: " + amigoIngresado);
