@@ -48,7 +48,7 @@ function agregarAmigo(){
     
     amigoIngresado = capturaAmigo();
     
-    if amigos.includes(amigoIngresado){
+    if (amigos.includes(amigoIngresado)){
                 alert("Ya habías ingresado a: " + amigoIngresado);
             }
     else {
@@ -63,7 +63,6 @@ function agregarAmigo(){
 
 // document.getElementById o document.querySelector 
 
-}
 
 function capturaAmigo(){
     let captura = document.getElementById("amigo").value;
