@@ -27,9 +27,9 @@ Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará a
 let amigos = [];
 let cantidadDeAmigos = 0;
 
-console.log("cantiad de amigos:" + cantidadDeAmigos);
+console.log("cantidad de amigos: " + cantidadDeAmigos);
 
-function creaAmigo(){
+function agregarAmigo(){
     /*
     Permite al usuario ingresar un nombre en el campo de texto y 
     añadirlo a la lista de amigos creada anteriormente.
@@ -42,7 +42,10 @@ function creaAmigo(){
         lo añade al arreglo que almacena los nombre de amigos.
     Limpia el campo de entrada: restablece el campo de texto a una cadena vacía.
 */
-
+let amigo = '';
+console.log("amigo: " +  amigo);
+amigo= document.getElementById('valorUsuario');
+console.log("amigo: " +  amigo);
 // document.getElementById o document.querySelector 
 
 }
