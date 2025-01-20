@@ -24,8 +24,7 @@ Sorteo aleatorio: Al hacer clic en el botón "Sortear Amigo", se seleccionará a
 
 // declaración de variable de tipo array, que almacenará los nombres de los amigos ingresados. 
 
-let amigos = [];
-
+let amigos = []
 function creaAmigo(){
     /*
     Permite al usuario ingresar un nombre en el campo de texto y 
@@ -39,8 +38,9 @@ function creaAmigo(){
         lo añade al arreglo que almacena los nombre de amigos.
     Limpia el campo de entrada: restablece el campo de texto a una cadena vacía.
 */
+
 }
-document.getElementById o document.querySelector para obtener el texto ingresado por el usuario.
+document.getElementById o document.querySelector 
 
 function acrualizaListaDeAmigos(){
     /*
