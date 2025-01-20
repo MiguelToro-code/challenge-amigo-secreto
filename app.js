@@ -64,7 +64,8 @@ function agregarAmigo(){
     */
     console.log("amigo ingresado: " +  amigoIngresado);
     amigos.push(amigoIngresado);
-    
+    console.log(amigos);
+
 // document.getElementById o document.querySelector 
 
 }
