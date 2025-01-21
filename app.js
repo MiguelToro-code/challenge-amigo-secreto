@@ -59,6 +59,7 @@ function agregarAmigo(){
         }
     
     console.log("amigo ingresado: " +  amigoIngresado);
+    document.getElementById("amigo").value = '';
     console.log(amigos);
     };
 };
