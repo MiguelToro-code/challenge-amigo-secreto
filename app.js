@@ -59,7 +59,8 @@ function agregarAmigo(){
     console.log("amigo ingresado: " +  amigoIngresado);
     console.log(amigos);
     };
-}
+};
+
 // document.getElementById o document.querySelector 
 
 
