@@ -64,9 +64,6 @@ function agregarAmigo(){
     };
 };
 
-// document.getElementById o document.querySelector 
-
-
 function capturaAmigo(){
     let captura = document.getElementById("amigo").value;
     if (captura != "" ){
@@ -80,7 +77,7 @@ function capturaAmigo(){
     }
 
 
-function acrualizaListaDeAmigos(){
+function actualizaListaDeAmigos(){
     /*
     Recorre el array amigos y agrega cada nombre como un elemento <li> dentro de una lista HTML. 
     Usa innerHTML para limpiar la lista antes de agregar nuevos elementos.
