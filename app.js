@@ -56,6 +56,9 @@ function agregarAmigo(){
         cantidadDeAmigos += 1;
         amigos.push(amigoIngresado);
         document.getElementById("amigo").value = '';
+        //publica la lista de amigos ingresados
+        document.getElementById("listaAmigos").value = '';
+        document.getElementById("listaAmigos").value = amigos;
         }
     
     console.log("amigo ingresado: " +  amigoIngresado);
