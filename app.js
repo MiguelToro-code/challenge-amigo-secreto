@@ -28,8 +28,6 @@ let amigos = [];
 let cantidadDeAmigos = 0;
 let amigoIngresado = "";
 
-console.log("cantidad de amigos: " + cantidadDeAmigos);
-
 function agregarAmigo(){
     /*
     Permite al usuario ingresar un nombre en el campo de texto y 
@@ -43,6 +41,8 @@ function agregarAmigo(){
         lo añade al arreglo que almacena los nombre de amigos.
     Limpia el campo de entrada: restablece el campo de texto a una cadena vacía.
 */
+
+// captura el valor del campo de entrada
     amigoIngresado = capturaAmigo();
     
     console.log("amigo ingresado: " +  amigoIngresado);
@@ -65,6 +65,7 @@ function agregarAmigo(){
     document.getElementById("amigo").value = '';
     console.log(amigos);
     };
+    actualizaListaDeAmigos(amigos);
 };
 
 function capturaAmigo(){
@@ -80,7 +81,7 @@ function capturaAmigo(){
     }
 
 
-function actualizaListaDeAmigos(){
+function actualizaListaDeAmigos(lista){
     /*
     Recorre el array amigos y agrega cada nombre como un elemento <li> dentro de una lista HTML. 
     Usa innerHTML para limpiar la lista antes de agregar nuevos elementos.
@@ -93,6 +94,15 @@ function actualizaListaDeAmigos(){
         para cada título.
     Agregar elementos a la lista: Para cada amigo, crear un nuevo elemento de lista.
     */
+    let listaHTML = document.getElementById("listaAmigos");
+    listaHTML.innerHTML = "";
+    lista.array.forEach(elemento => {
+        const li = document.createElement("li");
+        li.textContent = elemento;
+        listaHTML.appendChild(li);
+    });
+
+
 }
 
 function sortearAmigo(){
