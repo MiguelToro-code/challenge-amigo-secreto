@@ -37,6 +37,7 @@ function agregarAmigo(){
     Captura el valor del campo de entrada 
     Valida la entrada: valida de que el campo no esté vacío.
         si está vacío, muestra un alert con un mensaje de error: "Por favor, inserte un nombre."
+    Valida que el nombre no haya sido ingresado antes, para esto convierte el valor ingresado a mayúsculas    
     Actualiza el array de amigos: Si el valor es válido, 
         lo añade al arreglo que almacena los nombre de amigos.
     Limpia el campo de entrada: restablece el campo de texto a una cadena vacía.
@@ -56,9 +57,6 @@ function agregarAmigo(){
         cantidadDeAmigos += 1;
         amigos.push(amigoIngresado);
         document.getElementById("amigo").value = '';
-        //publica la lista de amigos ingresados
-        document.getElementById("listaAmigos").value = '';
-        document.getElementById("listaAmigos").value = amigos;
         }
     
     console.log("amigo ingresado: " +  amigoIngresado);
