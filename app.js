@@ -96,7 +96,7 @@ function actualizaListaDeAmigos(lista){
     */
     let listaHTML = document.getElementById("listaAmigos");
     listaHTML.innerHTML = "";
-    lista.array.forEach(elemento => {
+    lista.forEach(elemento => {
         const li = document.createElement("li");
         li.textContent = elemento;
         listaHTML.appendChild(li);
