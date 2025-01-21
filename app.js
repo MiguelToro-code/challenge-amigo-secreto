@@ -46,11 +46,8 @@ function agregarAmigo(){
 // captura el valor del campo de entrada
     amigoIngresado = capturaAmigo();
     
-    console.log("amigo ingresado: " +  amigoIngresado);
-    // amigoIngresado = capturaAmigo();
     if (amigoIngresado != ""){
-        console.log(amigoIngresado);
-        if (amigos.includes(amigoIngresado)){
+                if (amigos.includes(amigoIngresado)){
             alert("Ya habías ingresado a: " + amigoIngresado);
             }
         else {
@@ -58,10 +55,7 @@ function agregarAmigo(){
         amigos.push(amigoIngresado);
         document.getElementById("amigo").value = '';
         }
-    
-    console.log("amigo ingresado: " +  amigoIngresado);
     document.getElementById("amigo").value = '';
-    console.log(amigos);
     };
     actualizaListaDeAmigos(amigos);
 };
@@ -71,7 +65,6 @@ function capturaAmigo(){
     let captura = document.getElementById("amigo").value;
     capturaMayusculas = captura.toUpperCase();
     if (captura != "" ){
-        console.log(capturaMayusculas);
         return(capturaMayusculas);
         }
     else {
@@ -116,5 +109,16 @@ function sortearAmigo(){
     Mostrar el resultado: Actualizar el contenido del elemento de resultado utilizando document.getElementById() 
     e innerHTML para mostrar el amigo sorteado.
     */
+   if (cantidadDeAmigos == 0){
+        let limpiaLista = document.getElementById("listaAmigos");
+        limpiaLista.innerHTML = "";
+        alert("Ingresar algunos amigos para sortear");
+        return;
+   }
+   let amigoSorteado =  Math.floor(Math.random()*cantidadDeAmigos);
+      let listaHTML = document.getElementById("listaAmigos");
+   listaHTML.innerHTML = `Tu amigo secreto es: ${amigos[amigoSorteado]}`;
+   cantidadDeAmigos = 0;
+   amigos = [];
 }
 
