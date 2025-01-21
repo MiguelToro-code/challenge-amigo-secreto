@@ -73,7 +73,6 @@ function capturaAmigo(){
          };
     }
 
-
 function actualizaListaDeAmigos(lista){
     /*
     Recorre el array amigos y agrega cada nombre como un elemento <li> dentro de una lista HTML. 
