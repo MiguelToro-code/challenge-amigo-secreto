@@ -69,10 +69,12 @@ function agregarAmigo(){
 };
 
 function capturaAmigo(){
+    let capturaMayusculas ="";
     let captura = document.getElementById("amigo").value;
+    capturaMayusculas = captura.toUpperCase();
     if (captura != "" ){
-        console.log(captura);
-        return(captura);
+        console.log(capturaMayusculas);
+        return(capturaMayusculas);
         }
     else {
         alert("Por favor, inserte un nombre");
@@ -101,8 +103,6 @@ function actualizaListaDeAmigos(lista){
         li.textContent = elemento;
         listaHTML.appendChild(li);
     });
-
-
 }
 
 function sortearAmigo(){
